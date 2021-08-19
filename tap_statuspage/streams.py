@@ -196,7 +196,7 @@ class IncidentsStream(StatuspageStream):
         else:
             current_bookmark_dtime = None
 
-        running_bookmark_dtime = None
+        running_bookmark_dtime = current_bookmark_dtime
         with singer.metrics.job_timer(job_type=f"list_{self.tap_stream_id}"):
             with singer.metrics.record_counter(endpoint=self.tap_stream_id) as counter:
                 for page_id in self.get_page_ids():
@@ -245,7 +245,7 @@ class ComponentsStream(StatuspageStream):
         else:
             current_bookmark_dtime = None
 
-        running_bookmark_dtime = None
+        running_bookmark_dtime = current_bookmark_dtime
         with singer.metrics.job_timer(job_type=f"list_{self.tap_stream_id}"):
             with singer.metrics.record_counter(endpoint=self.tap_stream_id) as counter:
                 for page_id in self.get_page_ids():
@@ -294,7 +294,7 @@ class UptimeStream(StatuspageStream):
         else:
             current_bookmark_dtime = None
 
-        running_bookmark_dtime = None
+        running_bookmark_dtime = current_bookmark_dtime
         with singer.metrics.job_timer(job_type=f"list_{self.tap_stream_id}"):
             with singer.metrics.record_counter(endpoint=self.tap_stream_id) as counter:
                 for page_id in self.get_page_ids():
