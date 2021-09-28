@@ -324,7 +324,7 @@
                   "type": ["null", "string"]
                 },
                 "start_date": {
-                  "format": "date",
+                  "format": "date-time",
                   "type": ["null", "string"]
                 }
               },
