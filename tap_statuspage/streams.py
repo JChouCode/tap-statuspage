@@ -151,8 +151,8 @@ class PagesStream(StatuspageStream):
     tap_stream_id: ClassVar[str] = 'pages'
     stream: ClassVar[str] = 'pages'
     key_properties: ClassVar[str] = 'id'
-    replication_key: ClassVar[str] = 'created_at'
-    valid_replication_keys: ClassVar[List[str]] = ['created_at']
+    replication_key: ClassVar[str] = 'updated_at'
+    valid_replication_keys: ClassVar[List[str]] = ['udpated_at']
     replication_method: ClassVar[str] = 'FULL_TABLE'
     valid_params: ClassVar[List[str]] = []
     required_params: ClassVar[List[str]] = []
@@ -176,8 +176,8 @@ class IncidentsStream(StatuspageStream):
     tap_stream_id: ClassVar[str] = 'incidents'
     stream: ClassVar[str] = 'incidents'
     key_properties: ClassVar[str] = 'id'
-    replication_key: ClassVar[str] = 'created_at'
-    valid_replication_keys: ClassVar[List[str]] = ['created_at']
+    replication_key: ClassVar[str] = 'udpated_at'
+    valid_replication_keys: ClassVar[List[str]] = ['updated_at']
     replication_method: ClassVar[str] = 'INCREMENTAL'
     valid_params: ClassVar[List[str]] = ['q', 'limit', 'page']
     required_params: ClassVar[List[str]] = []
@@ -225,8 +225,8 @@ class ComponentsStream(StatuspageStream):
     tap_stream_id: ClassVar[str] = 'components'
     stream: ClassVar[str] = 'components'
     key_properties: ClassVar[str] = 'id'
-    replication_key: ClassVar[str] = 'created_at'
-    valid_replication_keys: ClassVar[List[str]] = ['created_at']
+    replication_key: ClassVar[str] = 'updated_at'
+    valid_replication_keys: ClassVar[List[str]] = ['updated_at']
     replication_method: ClassVar[str] = 'INCREMENTAL'
     valid_params: ClassVar[List[str]] = ['page', 'per_page']
     required_params: ClassVar[List[str]] = []
@@ -274,8 +274,8 @@ class UptimeStream(StatuspageStream):
     tap_stream_id: ClassVar[str] = 'uptime'
     stream: ClassVar[str] = 'uptime'
     key_properties: ClassVar[str] = 'id'
-    replication_key: ClassVar[str] = 'created_at'
-    valid_replication_keys: ClassVar[List[str]] = ['created_at']
+    replication_key: ClassVar[str] = 'updated_at'
+    valid_replication_keys: ClassVar[List[str]] = ['updated_at']
     replication_method: ClassVar[str] = 'INCREMENTAL'
     valid_params: ClassVar[List[str]] = ['start', 'end']
     required_params: ClassVar[List[str]] = ['start', 'end']
