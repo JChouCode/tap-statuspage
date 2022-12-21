@@ -2,7 +2,7 @@
   "streams": [
     {
       "tap_stream_id": "uptime",
-      "replication_key": "created_at",
+      "replication_key": "updated_at",
       "replication_method": "INCREMENTAL",
       "key_properties": "id",
       "schema": {
@@ -55,7 +55,7 @@
           "metadata": {
             "table-key-properties": "id",
             "forced-replication-method": "INCREMENTAL",
-            "valid-replication-keys": ["created_at"],
+            "valid-replication-keys": ["updated_at"],
             "inclusion": "available",
             "selected": "True"
           }
@@ -118,7 +118,7 @@
     },
     {
       "tap_stream_id": "components",
-      "replication_key": "created_at",
+      "replication_key": "updated_at",
       "replication_method": "INCREMENTAL",
       "key_properties": "id",
       "schema": {
@@ -179,7 +179,7 @@
           "metadata": {
             "table-key-properties": "id",
             "forced-replication-method": "INCREMENTAL",
-            "valid-replication-keys": ["created_at"],
+            "valid-replication-keys": ["updated_at"],
             "inclusion": "available"
           }
         },
@@ -271,7 +271,7 @@
     },
     {
       "tap_stream_id": "incidents",
-      "replication_key": "created_at",
+      "replication_key": "updated_at",
       "replication_method": "INCREMENTAL",
       "key_properties": "id",
       "schema": {
@@ -387,7 +387,7 @@
           "metadata": {
             "table-key-properties": "id",
             "forced-replication-method": "INCREMENTAL",
-            "valid-replication-keys": ["created_at"],
+            "valid-replication-keys": ["updated_at"],
             "inclusion": "available"
           }
         },
@@ -431,7 +431,7 @@
     },
     {
       "tap_stream_id": "pages",
-      "replication_key": "created_at",
+      "replication_key": "updated_at",
       "replication_method": "FULL_TABLE",
       "key_properties": "id",
       "schema": {
@@ -584,7 +584,7 @@
           "metadata": {
             "table-key-properties": "id",
             "forced-replication-method": "FULL_TABLE",
-            "valid-replication-keys": ["created_at"],
+            "valid-replication-keys": ["udpated_at"],
             "inclusion": "available"
           }
         },
