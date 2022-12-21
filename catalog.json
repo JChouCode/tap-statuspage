@@ -584,7 +584,7 @@
           "metadata": {
             "table-key-properties": "id",
             "forced-replication-method": "FULL_TABLE",
-            "valid-replication-keys": ["udpated_at"],
+            "valid-replication-keys": ["updated_at"],
             "inclusion": "available"
           }
         },
